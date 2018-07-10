@@ -1,1 +1,1 @@
-echo "# Angular" >> README.md
+Proyecto primeros pasos de angular 
