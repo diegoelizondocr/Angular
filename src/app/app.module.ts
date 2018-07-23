@@ -14,12 +14,16 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
 import { DataService } from './data.service';
+import { MusicComponent } from './music/music.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    MusicComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
