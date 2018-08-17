@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';     
 import { AboutComponent } from './about/about.component';  
-import { MusicComponent } from './music/music.component';  
+import { MusicComponent } from './music/music.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'music',
     component: MusicComponent
+  },
+  {
+    path: 'menu',
+    component: MenuComponent
   }
 ];
 

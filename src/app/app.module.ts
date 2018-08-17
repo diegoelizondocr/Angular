@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 //Angular 5
@@ -29,7 +30,9 @@ import { MenuComponent } from './menu/menu.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpModule,
+    HttpClientModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
