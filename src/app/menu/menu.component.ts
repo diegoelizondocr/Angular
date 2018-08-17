@@ -7,6 +7,7 @@ import 'rxjs/add/operator/catch';
 /*
     'https://vimeo.com/23374724'
     'https://www.youtube.com/watch?v=0SqWv0Yrfjw'
+    https://developer.vimeo.com/api/reference
     */
 @Component({
   selector: 'app-menu',
@@ -20,9 +21,12 @@ export class MenuComponent implements OnInit {
 
   constructor(protected _httpClient: HttpClient) {
     
-    this.checkVideoUrl('https://vimeo.com/23374724i')
+    this.checkVideoUrl('https://vimeo.com/2337472f4')
       .then(response => {
         console.log('test use:', response );
+      })
+      .catch( error => {
+        console.log('test use:', 'false' );
       });
 
 
@@ -40,7 +44,7 @@ export class MenuComponent implements OnInit {
         return 'file';
     }
     const result = await this.checkVimeoVideo(url);
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       if(result)
           resolve('vimeo');
     })
