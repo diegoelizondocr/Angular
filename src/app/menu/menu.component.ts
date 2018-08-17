@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch'
-import { resolve } from 'q';
+import 'rxjs/add/operator/catch';
+
 /*
     'https://vimeo.com/23374724'
     'https://www.youtube.com/watch?v=0SqWv0Yrfjw'
